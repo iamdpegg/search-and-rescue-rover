@@ -41,7 +41,7 @@ def action_right():
 @route('/forward')
 @route('/forwards')
 def action_forward():
-	robot.forward()
+	robot.value(0.7, 0.9)
 # 	time.sleep(0.2)
 # 	robot.stop()
 	return "FORWARDS"
@@ -49,7 +49,7 @@ def action_forward():
 @route('/back')
 @route('/backward')
 def action_back():
-	robot.backward()
+	robot.value = (-0.7, -0.9)
 # 	time.sleep(0.2)
 # 	robot.stop()
 	return "BACKWARDS"
